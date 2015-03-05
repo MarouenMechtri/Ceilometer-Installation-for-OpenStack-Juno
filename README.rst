@@ -6,7 +6,7 @@ Welcome to OpenStack Ceilometer installation manual !
 
 This document is based on `the OpenStack Official Documentation <http://docs.openstack.org/juno/install-guide/install/apt/content/>`_ for Juno. 
 
-================================
+===================
 
 .. contents::
 
