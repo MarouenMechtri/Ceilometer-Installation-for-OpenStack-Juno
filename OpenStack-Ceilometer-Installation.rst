@@ -27,17 +27,17 @@ The Telemetry module or Ceilometer performs the following functions:
 
 + Produces signed metering messages that cannot be repudiated. 
 
- Ceilometer has five basic components that communicate by using the OpenStack messaging bus: 
+Ceilometer has five basic components that communicate by using the OpenStack messaging bus: 
 
-A **compute agent** Runs on each compute node and polls for resource utilization statistics. 
++ A **compute agent** Runs on each compute node and polls for resource utilization statistics. 
 
-A **central agent** Runs on a central management server to poll for resource utilization statistics for resources not tied to instances or compute nodes.
++ A **central agent** Runs on a central management server to poll for resource utilization statistics for resources not tied to instances or compute nodes.
 
-A **collector** Runs on central management serverS to monitor the message queues (for notifications and for metering data coming from the agent). Notification messages are processed and turned into metering messages, which are sent to the message bus using the appropriate topic. Telemetry messages are written to the data store without modification.
++ A **collector** Runs on central management serverS to monitor the message queues (for notifications and for metering data coming from the agent). Notification messages are processed and turned into metering messages, which are sent to the message bus using the appropriate topic. Telemetry messages are written to the data store without modification.
 
-A **data store** A database capable of handling concurrent writes (from one or more collector instances) and reads (from the API server).
++ A **data store** A database capable of handling concurrent writes (from one or more collector instances) and reads (from the API server).
 
-An **API server** Runs on one or more central management servers to provide data access from the data store.
++ An **API server** Runs on one or more central management servers to provide data access from the data store.
 
 
 Ceilometer Install
