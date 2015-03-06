@@ -106,7 +106,8 @@ Controller Node
 
 * Install ceilometer packages::
 
-    apt-get install -y ceilometer-api ceilometer-collector ceilometer-agent-central ceilometer-agent-notification ceilometer-alarm-evaluator ceilometer-alarm-notifier python-ceilometerclient
+    apt-get install -y ceilometer-api ceilometer-collector ceilometer-agent-central \
+    ceilometer-agent-notification ceilometer-alarm-evaluator ceilometer-alarm-notifier python-ceilometerclient
 
 
 * Edit the /etc/ceilometer/ceilometer.conf file::
